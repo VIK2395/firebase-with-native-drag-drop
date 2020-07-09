@@ -1,0 +1,65 @@
+body {
+    background-color: antiquewhite;
+}
+
+.done {
+    text-decoration: line-through;
+	color: gray;
+}
+
+.content p {
+    margin-bottom: 0px;
+}
+
+.just-deleted {
+    animation-name: deleted;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes deleted {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+div.temp-div-to-shrink {
+    animation-name: shrinked;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes shrinked {
+    to { height: 0 }
+}
+
+.just-added {
+    animation-name: added;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.36,-0.64,.34,1.76);
+    animation-direction: normal;
+}
+
+@keyframes added {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.dragging {
+    border-left: 10px solid rgb(0, 183, 255);
+    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.14);
+        // top right bottom left
+    margin: -5px 3px 5px -5px;
+}
+
+// ul {
+//     transition: transform 5s;
+// }

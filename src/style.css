@@ -1,0 +1,34 @@
+/* @import "~bootstrap/dist/css/bootstrap.min.css";bootstrap без препроцесорів, дивись сайт щоб підключити препроцесори */
+
+/* body {
+    background-color: antiquewhite;
+} */
+
+
+audio {
+    width: 500px;
+}
+
+.video-container {
+    width: 1080px;
+    margin: 20px auto;
+}
+
+video {
+    width: 1080px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+figure {
+    width: 500px;
+    margin: 20px auto;
+}
+
+/* .done {
+    text-decoration: line-through;
+	color: gray;
+} */
